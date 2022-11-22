@@ -1,5 +1,51 @@
-
+.bodyContent{
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .contentBlock{
     position: relative;
-    background-color: aquamarine;
+    top: 10vh;
+    bottom: 10vh;
+    left: 10vw;
+    right: 10vw;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 40px -10px;
+}
+.imageContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.titleContent{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+.imageReference{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    bottom: 60px;
+}
+.imageReference a{
+    color: white;
+    text-decoration: none;
+}
+.imageSizing{
+    height: 90%;
+    width: 90%;
+    object-fit:fill;
+    border-radius: 10px;
+    box-shadow: 4px 4px 40px -10px;
 }
