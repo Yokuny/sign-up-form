@@ -77,48 +77,63 @@
     border-radius: 10px;
 }
 .formSubitle{
-    width: 60%;
+    width: 70%;
     font-weight: inherit;
     text-align:justify;
+    margin-bottom: 10px;
 }
 .formTitle{
-    width: 60%;
+    width: 70%;
     letter-spacing:.5px;
     font-weight: 700;
     text-align:justify;
+    margin-bottom: 10px;
 }
+/* fim texto em cima do formulario */
 .formBackground{
     width: 90%;
     padding: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 .formSpace{
-    width: 70%;
+    width: 73%;
+    gap: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .fieldsetArrange{
     width: 100%;
     display: flex;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .labelArrange{
     width: 80%;
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center
+}
+.decoredButton{
+    border-radius: 2px;
+    border: solid transparent 0px;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0px;
+    background: linear-gradient(-45deg, #d631ff, #8031ff, #23A6D5, #23D5AB, #26deeb);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
 }
 legend{
-    margin: 5px 0px 10px 20px;
-    font-weight: 700;
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    width: 40%;
+    height: 40px;
 }
 label{
     font-size: 12px;
@@ -131,7 +146,15 @@ input{
     border-radius: 2px;
     border: solid transparent;
 }
+button{
+    width: 40%;
+    height: 35px;
+    cursor: pointer;
 
+}
+button:hover{
+    
+}
 .smallInfo{
     font-weight: 700;
     font-size: 12px; 
