@@ -1,23 +1,37 @@
+.animatedBackgroundColors{
+    position: relative;
+    background: linear-gradient(-45deg, #d631ff, #8031ff, #23A6D5, #23D5AB, #26deeb);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
 .bodyContent{
     width: 100vh;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(./animatedBackGround.svg);
 }
 .contentBlock{
-    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    width: 80vw;
+    height: 80vh;
     top: 10vh;
     bottom: 10vh;
     left: 10vw;
     right: 10vw;
-    width: 80vw;
-    height: 80vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: grid;
-    grid-template-columns: 3fr 5fr;
-    gap: 10px;
     border-radius: 10px;
-    box-shadow: 4px 4px 40px -10px;
 }
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+/*       inicio campo left imagem           */ 
 .imageContent{
     display: flex;
     justify-content: center;
@@ -27,25 +41,101 @@
 }
 .titleContent{
     position: absolute;
-    color: white;
     font-weight: 700;
     font-size: 22px;
 }
 .imageReference{
     position: absolute;
-    color: white;
-    font-weight: 700;
-    font-size: 12px;
     bottom: 60px;
 }
-.imageReference a{
-    color: white;
-    text-decoration: none;
-}
+
 .imageSizing{
     height: 90%;
     width: 90%;
     object-fit:fill;
     border-radius: 10px;
-    box-shadow: 4px 4px 40px -10px;
+}
+/*       fim campo left imagem          */ 
+/*         inicio form field          */
+.formContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.formSizing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 90%;
+    width: 95%;
+    background-color: black;
+    border-radius: 10px;
+}
+.formSubitle{
+    width: 60%;
+    font-weight: inherit;
+    text-align:justify;
+}
+.formTitle{
+    width: 60%;
+    letter-spacing:.5px;
+    font-weight: 700;
+    text-align:justify;
+}
+.formBackground{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.formSpace{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fieldsetArrange{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.labelArrange{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+legend{
+    margin: 5px 0px 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+label{
+    font-size: 12px;
+    width: 80%;
+}
+input{
+    margin-top: 2px;
+    width: 80%;
+    height: 20px;
+    border-radius: 2px;
+    border: solid transparent;
+}
+
+.smallInfo{
+    font-weight: 700;
+    font-size: 12px; 
+}
+.smallInfo a{
+    cursor: pointer;
 }
