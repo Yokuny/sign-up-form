@@ -140,20 +140,26 @@ label{
     width: 80%;
 }
 input{
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
     margin-top: 2px;
     width: 80%;
     height: 20px;
     border-radius: 2px;
     border: solid transparent;
 }
+input:valid{
+    border: #24d8c1 1px solid;
+    padding: 3px 4px;
+}
 button{
     width: 40%;
     height: 35px;
     cursor: pointer;
-
+    opacity: 0.9;
 }
 button:hover{
-    
+    filter: brightness(90%);
 }
 .smallInfo{
     font-weight: 700;

@@ -26,31 +26,31 @@
                         <fieldset class="fieldsetArrange">
                             <div class="labelArrange">
                                 <label for="firstName">Nome</label>
-                                <input type="text" name="firstName" id="firstName" placeholder="Rafael">
+                                <input type="text" name="firstName" id="firstName" placeholder="Rafael" minlength="3" maxlength="12" required>
                             </div>
                             <div class="labelArrange">
                                 <label for="lastName">Sobrenome</label>
-                                <input type="text" name="lastName" id="lastName" placeholder="Buarque Marques">
+                                <input type="text" name="lastName" id="lastName" placeholder="Buarque Marques" minlength="6" maxlength="30" required>
                             </div>
                         </fieldset>
                         <fieldset class="fieldsetArrange">
                             <div class="labelArrange">
                                 <label for="userEmail">Email</label>
-                                <input type="email" name="userEmail" id="userEmail" placeholder="seu@email.com">
+                                <input type="email" name="userEmail" id="userEmail" placeholder="seu@email.com" required>
                             </div>
                             <div class="labelArrange">
                                 <label for="userPhoneNumber">Phone Number</label>
-                                <input type="tel" name="userPhoneNumber" id="userPhoneNumber" placeholder="11 99999-9999">
+                                <input type="tel" name="userPhoneNumber" id="userPhoneNumber" placeholder="(11)99999-9999" min="9999999999" max="99999999999" pattern="^\(?[1-9]{2}\)? ?-?(?:[2-8]|9[1-9])[0-9]{3}\-? ?[0-9]{4}$" required>
                             </div>
                         </fieldset>
                         <fieldset class="fieldsetArrange">
                             <div class="labelArrange">
                                 <label for="userPassword">Password</label>
-                                <input type="password" name="userPassword" id="userPassword" placeholder="******">
+                                <input type="password" name="userPassword" id="userPassword" placeholder="senha" required>
                             </div>
                             <div class="labelArrange">
                                 <label for="passwordConfirmation">Confirm</label>
-                                <input type="password" name="passwordConfirmation" id="passwordConfirmation" placeholder="******">
+                                <input type="password" name="passwordConfirmation" id="passwordConfirmation" placeholder="senha" required>
                             </div>
                         </fieldset>
                         <button class="decoredButton" type="submit">Submit</button>
