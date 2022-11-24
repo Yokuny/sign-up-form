@@ -3,6 +3,5 @@ function checkFields(){
     let secondPassword = document.getElementById("passwordConfirmation");
     if(secondPassword.value != firstPassword.value){
         secondPassword.style.borderColor = "red";
-        console.log('aqui');
     }
 }
